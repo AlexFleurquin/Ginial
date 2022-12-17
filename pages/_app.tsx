@@ -2,10 +2,13 @@ import 'styles/global.css';
 
 import { ThemeProvider } from 'next-themes';
 import { SessionProvider } from 'next-auth/react';
-import { Inter } from '@next/font/google';
+import { Oxygen } from '@next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 
-const interVariable = Inter();
+const oxygen = Oxygen({
+  subsets: ['latin'],
+  weight: ['300', '400', '700']
+});
 
 export default function App({
   Component,
@@ -14,7 +17,7 @@ export default function App({
   return (
     <SessionProvider session={session}>
       <ThemeProvider attribute="class">
-        <main className={interVariable.className}>
+        <main className={oxygen.className}>
           <Component {...pageProps} />
           <Analytics />
         </main>

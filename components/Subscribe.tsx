@@ -41,7 +41,7 @@ export default function Subscribe() {
   return (
     <div className="border border-blue-200 rounded p-6 my-4 w-full dark:border-gray-800 bg-blue-50 dark:bg-blue-opaque">
       <p className="text-lg md:text-xl font-bold text-gray-900 dark:text-gray-100">
-        Subscribe to the newsletter
+        S'abonner à la newsletter
       </p>
       <p className="my-1 text-gray-800 dark:text-gray-200">
         Get emails from me about web development, tech, and early access to new
@@ -61,7 +61,7 @@ export default function Subscribe() {
           className="flex items-center justify-center absolute right-1 top-1 px-4 pt-1 font-medium h-8 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded w-28"
           type="submit"
         >
-          {form.state === Form.Loading ? <LoadingSpinner /> : 'Subscribe'}
+          {form.state === Form.Loading ? <LoadingSpinner /> : "S'abonner"}
         </button>
       </form>
       {form.state === Form.Error ? (
@@ -72,13 +72,13 @@ export default function Subscribe() {
         <p className="text-sm text-gray-800 dark:text-gray-200">
           {`${
             subscriberCount > 0 ? subscriberCount.toLocaleString() : '-'
-          } subscribers – `}
+          } abonnés – `}
           <a
-            href="https://www.getrevue.co/profile/leerob"
+            href="https://www.getrevue.co/profile/flexsender"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View all issues
+            Voir toutes les nouvelles
           </a>
         </p>
       )}

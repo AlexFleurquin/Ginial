@@ -21,7 +21,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans]
+        sans: ['Oxygen', ...fontFamily.sans]
       },
       typography: (theme) => ({
         DEFAULT: {

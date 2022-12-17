@@ -16,6 +16,14 @@
     "baseUrl": ".",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/home/Creatives.jsx",
+    "pages/home/Footer.jsx",
+    "pages/home/Faqs.jsx",
+    "pages/home/Cta.jsx"
+  ],
   "exclude": ["node_modules"]
 }
